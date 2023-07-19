@@ -1,7 +1,7 @@
 
 let btn=document.getElementById("submit");
 let list=document.getElementById("listcontent")
-let updatebtn=document.getElementById("updated")
+
 var arr=[]
 function additems(title,content)
 {
@@ -50,8 +50,14 @@ function addcards(title)
 }
 function fun(rem)
 {
-    console.log(rem.parentNode.firstElementChild)
-// rem.parentNode.remove();
+    let wag=rem.parentNode.firstElementChild.firstElementChild.innerHTML;
+    let del=arr.findIndex((val)=>
+    {
+        return val.title===wag;
+    })
+    arr.splice(del,1);
+    console.log(arr)
+rem.parentNode.remove();
 }
 function showcard(pan)
 {
@@ -65,6 +71,17 @@ function showcard(pan)
     showcontent.value=showelement.content;
     popup.style.display="block"
     popupbg.style.display="block"
+    let updatebtn=document.getElementById("updated")
+    updatebtn.addEventListener("click",(event)=>
+    {
+        event,preventDefault()
+        let focus=arr.findIndex((val)=>
+        {
+            
+        })
+    alert("hai")
+    })
+    
 }
 // window.addEventListener("click",(event) => {
 //     if(event.target == popupbg){
@@ -76,7 +93,5 @@ function showcard(pan)
 //     popup.style.display="none"
 //     popupbg.style.display="none"
 // }
- function update(clr)
- {
-    console.log(clr)
- }
+ 
+ 
