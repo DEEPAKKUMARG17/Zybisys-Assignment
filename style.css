@@ -1,0 +1,95 @@
+header
+{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+#getnotes
+{
+    width: 50%;
+    margin: auto;
+}
+.form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+}
+
+.dot
+{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+#submit
+{
+    border-radius: 25px;
+    border-style: none;
+    padding: 10px;
+    
+}
+.main-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid green;
+}
+.listcontent
+{
+  
+    border: 2px solid red;
+}
+.todolist
+{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: auto;
+}
+.maincont
+{
+    width:75%;
+    margin: 10px;
+    padding: 10px;
+    background-color:#808080;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content:  space-around;
+}
+
+#popupbg{
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(201, 201, 201, 0.483);
+    z-index: 999;
+    
+}
+#popup{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    font-size: 12px;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    width: 40%;
+    border-radius: 25px;
+    height: 70%;
+    overflow: scroll
+    
+}
+#popup::-webkit-scrollbar
+{
+    display: none;
+}
